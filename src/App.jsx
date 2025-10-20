@@ -4,6 +4,7 @@ import Homepage from "./Pages/HomePage";
 import ProductDetailPage from "./Pages/ProductDetailPage";
 import CartPage from "./Pages/CartPage";
 import { CartProvider } from "./Contexts/CartContext";
+import Footer from "./components/Footer";
 
 function App(){
   return(
@@ -19,6 +20,7 @@ function App(){
           <Route path="*" element={<h1>404 Not Found</h1>}/>
         </Routes>
       </main>
+      <Footer/>
       </CartProvider>
     </Router>
     </>
